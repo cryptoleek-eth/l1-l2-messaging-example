@@ -10,6 +10,8 @@ ganache -s 1234
 ## l2-protostar
 This is the starknet code, which should be deployed on starknet-devnet. The project is scaffolded using protostar.
 ```
+source ~/cairo_venv/bin/activate //Assume your have your cairo_venv setup already
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES //This is required for MAC M1 machine at least, otherwise the l1 l2 messaging wont work
 starknet-devnet --seed 1234
 ```
 
